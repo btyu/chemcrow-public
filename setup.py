@@ -1,4 +1,5 @@
 from setuptools import find_packages, setup
+from chemcrow.version import __version__
 
 exec(open("chemcrow/version.py").read())
 
@@ -21,16 +22,19 @@ setup(
         "python-dotenv",
         "rdkit",
         "synspace",
-        "openai==0.27.8",
+        "openai",
         "molbloom",
         "paper-qa==1.1.1",
         "google-search-results",
-        "langchain>=0.0.234,<=0.0.275",
-        "langchain_core==0.0.1",
+        "langchain>=0.2.16",
+        # "langchain_core==0.0.1",
+        "langchain_experimental",
+        "langchain_anthropic",
+        "langchain_openai",
         "nest_asyncio",
         "tiktoken",
         "rmrkl",
-        #"paper-scraper@git+https://github.com/blackadad/paper-scraper.git",
+        "paper-scraper@git+https://github.com/blackadad/paper-scraper.git",
         "streamlit",
         "rxn4chemistry",
         "duckduckgo-search",

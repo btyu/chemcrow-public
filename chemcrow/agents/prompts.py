@@ -41,8 +41,8 @@ Question: {input}
 """
 
 SUFFIX = """
-Thought: {agent_scratchpad}
-"""
+Thought:{agent_scratchpad}
+""".strip()
 FINAL_ANSWER_ACTION = "Final Answer:"
 
 

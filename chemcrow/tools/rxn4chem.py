@@ -34,7 +34,8 @@ class RXN4Chem(BaseTool):
         self.rxn4chem = RXN4ChemistryWrapper(
             api_key=self.rxn4chem_api_key, base_url=self.base_url
         )
-        self.rxn4chem.project_id = "655b7b760fb57c001f25dc91"
+        self.rxn4chem.project_id = "668ffaebe03a4a727e802480"
+        # self.rxn4chem.create_project('ChemCrow')
 
     @abc.abstractmethod
     def _run(self, smiles: str):  # type: ignore
